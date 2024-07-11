@@ -11,6 +11,8 @@ from utils.analise import Analise
 from utils.graficos import FinancialPlots
 
 """
+requirements.txt
+
 streamlit==1.24.0
 pandas==2.0.3
 pandas-datareader==0.10.0
