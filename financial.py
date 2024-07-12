@@ -10,18 +10,6 @@ from utils.guida import GuidaDataframe
 from utils.analise import Analise
 from utils.graficos import FinancialPlots
 
-"""
-requirements.txt
-
-streamlit==1.24.0
-pandas==2.0.3
-pandas-datareader==0.10.0
-plotly==5.15.0
-yfinance==0.2.30
-itertools==0.1
-time==3.9.6
-"""
-
 st.set_page_config(layout='wide', page_title='Financial shares of large companies',
                    page_icon="img\Icone.png")
 pl = PagesLive
