@@ -10,11 +10,15 @@ from guida import GuidaDataframe
 from analise import Analise
 from graficos import FinancialPlots
 
-st.set_page_config(layout='wide', page_title='Financial shares of large companies',
-                   page_icon="Icone.png")
+#st.set_page_config(layout='wide', page_title='Financial shares of large companies',
+                   #page_icon="Icone.png")
+
+st.set_page_config(layout="wide", initial_sidebar_state="expanded", page_title="My Streamlit App", page_icon=":smiley:",
+                   **{"layout": "centered", "sticky_footer": False, "wide_mode": False, "body": "#f0f0f0"})
+
 pl = PagesLive
 
-#st.sidebar.image("img\Investment 1.png")
+st.sidebar.image("Investment 1.png")
 st.sidebar.write('# Financial shares of large companies')
 st.sidebar.write('Filtro do dataset - Escolha como quer ver os dados:')
 
