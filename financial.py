@@ -22,7 +22,7 @@ st.write(f"Você escolheu:")
 st.write(f'## {resposta}')
 
 if resposta == 'Petrobras':
-    df = pd.read_csv('Data\Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
     #df = pl.dataframe_ativo('PBR', resposta)
     #df = pl.engenharia_de_atributos(df)
 
