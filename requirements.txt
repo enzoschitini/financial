@@ -3,5 +3,4 @@ pandas
 pandas-datareader
 plotly
 yfinance
-itertools
 time
