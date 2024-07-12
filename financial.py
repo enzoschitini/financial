@@ -10,11 +10,10 @@ from guida import GuidaDataframe
 from analise import Analise
 from graficos import FinancialPlots
 
-st.set_page_config(layout='wide', page_title='Financial shares of large companies',
-                   page_icon="img\Icone.png")
+st.set_page_config(layout='wide', page_title='Financial shares of large companies')
 pl = PagesLive
 
-st.sidebar.image("img\Investment 1.png")
+#st.sidebar.image("img\Investment 1.png")
 st.sidebar.write('# Financial shares of large companies')
 st.sidebar.write('Filtro do dataset - Escolha como quer ver os dados:')
 
