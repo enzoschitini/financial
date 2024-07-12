@@ -3,3 +3,4 @@ pandas==2.0.3
 pandas-datareader==0.10.0
 plotly==5.15.0
 yfinance==0.2.30
+itertools==0.1
