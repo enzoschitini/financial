@@ -30,31 +30,31 @@ if resposta == 'Petrobras':
     pl.painel_geral(df, 'Petróleo Brasileiro S.A. - Petrobras (PBR)', "Petrobras.png")
 
 elif resposta == 'Coca-Cola':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('The Coca-Cola Company (KO).csv')
 
     pl = Analise
     pl.painel_geral(df, 'The Coca-Cola Company (KO)', "Coca-Cola.png")
 
 elif resposta == 'Amazon':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('Amazon - Stock market shares.csv')
 
     pl = Analise
-    pl.painel_geral(df, 'Amazon - Stock market shares', "img\Amazon.png")
+    pl.painel_geral(df, 'Amazon - Stock market shares', "Amazon.png")
 
 elif resposta == 'Tesla':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('Tesla, Inc. (TSLA).csv')
 
     pl = Analise
-    pl.painel_geral(df, 'Tesla, Inc. (TSLA)', "img\Tesla.png")
+    pl.painel_geral(df, 'Tesla, Inc. (TSLA)', "Tesla.png")
 
 elif resposta == 'Itaú Unibanco':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('Itaú Unibanco Holding S.A. (ITUB).csv')
 
     pl = Analise
-    pl.painel_geral(df, 'Itaú Unibanco Holding S.A. (ITUB)', "img\Itaú.png")
+    pl.painel_geral(df, 'Itaú Unibanco Holding S.A. (ITUB)', "Itaú.png")
 
 elif resposta == 'Emirates':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    df = pd.read_csv('Emirates Global Sukuk S USD Acc.csv')
 
     pl = Analise
-    pl.painel_geral(df, 'Emirates Global Sukuk S USD Acc', "img\Emirates.png")
+    pl.painel_geral(df, 'Emirates Global Sukuk S USD Acc', "Emirates.png")
