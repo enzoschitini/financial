@@ -177,7 +177,7 @@ class Analise():
 
             st.image(imagem)
             st.header(nome)
-            st.write("Questo è il contenuto della seconda colonna, che è più piccola.")
+            #st.write("")
             file_name = f"{nome}.csv"
             download_csv(dataframe, file_name)
             st.write('---')
