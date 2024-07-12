@@ -21,10 +21,38 @@ resposta = st.sidebar.selectbox(f"Escolha uma empresa:", ['Home', 'Petrobras', '
 st.write(f"Você escolheu:")
 st.write(f'## {resposta}')
 
-if resposta == 'Coca-Cola':
-    df = pl.dataframe_ativo('KO', resposta)
-    #st.write(df)
-    df = pl.engenharia_de_atributos(df)
+if resposta == 'Petrobras':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
 
     pl = Analise
-    pl.painel_geral(df, 'The Coca-Cola Company (KO)', "img\Coca-Cola.png")
+    pl.painel_geral(df, 'Petróleo Brasileiro S.A. - Petrobras (PBR)', "Petrobras.png")
+
+elif resposta == 'Coca-Cola':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+
+    pl = Analise
+    pl.painel_geral(df, 'The Coca-Cola Company (KO)', "Coca-Cola.png")
+
+elif resposta == 'Amazon':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+
+    pl = Analise
+    pl.painel_geral(df, 'Amazon - Stock market shares', "img\Amazon.png")
+
+elif resposta == 'Tesla':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+
+    pl = Analise
+    pl.painel_geral(df, 'Tesla, Inc. (TSLA)', "img\Tesla.png")
+
+elif resposta == 'Itaú Unibanco':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+
+    pl = Analise
+    pl.painel_geral(df, 'Itaú Unibanco Holding S.A. (ITUB)', "img\Itaú.png")
+
+elif resposta == 'Emirates':
+    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+
+    pl = Analise
+    pl.painel_geral(df, 'Emirates Global Sukuk S USD Acc', "img\Emirates.png")
