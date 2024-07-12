@@ -21,10 +21,10 @@ resposta = st.sidebar.selectbox(f"Escolha uma empresa:", ['Home', 'Petrobras', '
 st.write(f"Você escolheu:")
 st.write(f'## {resposta}')
 
-if resposta == 'Petrobras':
-    df = pd.read_csv('Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
-    #df = pl.dataframe_ativo('PBR', resposta)
-    #df = pl.engenharia_de_atributos(df)
+if resposta == 'Coca-Cola':
+    df = pl.dataframe_ativo('KO', resposta)
+    #st.write(df)
+    df = pl.engenharia_de_atributos(df)
 
     pl = Analise
-    pl.painel_geral(df, 'Petróleo Brasileiro S.A. - Petrobras (PBR)', "img\Petrobras.png")
+    pl.painel_geral(df, 'The Coca-Cola Company (KO)', "img\Coca-Cola.png")
