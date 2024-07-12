@@ -19,7 +19,7 @@ st.sidebar.image("Investment 1.png")
 st.sidebar.write('# Financial shares of large companies')
 st.sidebar.write('Filtro do dataset - Escolha como quer ver os dados:')
 
-resposta = st.sidebar.selectbox(f"Escolha uma empresa:", ['Home', 'Petrobras', 'Coca-Cola', 'Amazon', 'Tesla', 'Itaú Unibanco', 'Emirates'])
+resposta = st.sidebar.selectbox(f"Escolha uma empresa:", ['Petrobras', 'Coca-Cola', 'Amazon', 'Tesla', 'Itaú Unibanco', 'Emirates'])
 st.write(f"Você escolheu:")
 st.write(f'## {resposta}')
 
