@@ -1,5 +1,5 @@
 import streamlit as st
-import yfinance as yf
+#import yfinance as yf
 import pandas as pd
 from utils.graficos import FinancialPlots
 import plotly.graph_objects as go
