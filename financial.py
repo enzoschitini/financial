@@ -23,44 +23,9 @@ st.write(f"Você escolheu:")
 st.write(f'## {resposta}')
 
 if resposta == 'Petrobras':
-    df = pl.dataframe_ativo('PBR', resposta)
-    df = pl.engenharia_de_atributos(df)
+    df = pd.read_csv('Data\Petróleo Brasileiro S.A. - Petrobras (PBR).csv')
+    #df = pl.dataframe_ativo('PBR', resposta)
+    #df = pl.engenharia_de_atributos(df)
 
     pl = Analise
     pl.painel_geral(df, 'Petróleo Brasileiro S.A. - Petrobras (PBR)', "img\Petrobras.png")
-
-elif resposta == 'Coca-Cola':
-    df = pl.dataframe_ativo('KO', resposta)
-    #st.write(df)
-    df = pl.engenharia_de_atributos(df)
-
-    pl = Analise
-    pl.painel_geral(df, 'The Coca-Cola Company (KO)', "img\Coca-Cola.png")
-
-elif resposta == 'Amazon':
-    df = pl.dataframe_ativo('AMZN', resposta)
-    df = pl.engenharia_de_atributos(df)
-
-    pl = Analise
-    pl.painel_geral(df, 'Amazon - Stock market shares', "img\Amazon.png")
-
-elif resposta == 'Tesla':
-    df = pl.dataframe_ativo('TSLA', resposta)
-    df = pl.engenharia_de_atributos(df)
-
-    pl = Analise
-    pl.painel_geral(df, 'Tesla, Inc. (TSLA)', "img\Tesla.png")
-
-elif resposta == 'Itaú Unibanco':
-    df = pl.dataframe_ativo('ITUB', resposta)
-    df = pl.engenharia_de_atributos(df)
-
-    pl = Analise
-    pl.painel_geral(df, 'Itaú Unibanco Holding S.A. (ITUB)', "img\Itaú.png")
-
-elif resposta == 'Emirates':
-    df = pl.dataframe_ativo('0P0001LIHZ', resposta)
-    df = pl.engenharia_de_atributos(df)
-
-    pl = Analise
-    pl.painel_geral(df, 'Emirates Global Sukuk S USD Acc', "img\Emirates.png")
